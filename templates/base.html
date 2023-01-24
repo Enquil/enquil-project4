@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block meta %}
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% endblock %}
+    {% block corecss %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% endblock %}
+</head>
+<body>
+    <nav class="nav">This is a Nav</nav>
+    {% block content %}
+    {% endblock content %}
+    <footer class="nav">This is a Footer</footer>
+</body>
+</html>
