@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
-CATEGORY_CHOICES = (
+CATEGORY_CHOICES = [
     ('general', "general"),
     ("business", "business"),
     ("art_entertainment", "art and entertainment"),
@@ -11,7 +11,7 @@ CATEGORY_CHOICES = (
     ("science", "science"),
     ("opinions", "opinions"),
     ("ships_giggles", "ships and giggles"),
-    )
+    ]
 
 STATUS = ((0, 'Draft'), (1, 'Published'))
 

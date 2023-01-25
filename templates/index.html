@@ -6,14 +6,17 @@
 <section>
     <div class="container g-0">
         <div class="row g-0">
-            <div class="col-md-3"></div>
+            <div class="col-md-3">
+
+            </div>
             <div class="col-md-6 text-center">
                 {% for post in post_list %}
                 <img style="width: 350px; height: auto;" src=" {{ post.featured_image.url }}">
                 <p>{{ post.content | safe }}</p>
                 {% endfor %}
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-3">
+            </div>
         </div>
     </div>
 </section>

@@ -32,8 +32,14 @@
                           Categories
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            {% for categories in post_list %}
-                          <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">All Categories</a></li>
+                            <li class="categories"><a class="nav-link" href="">Business</a></li>
+                            <li class="categories"><a class="nav-link" href="">Art/Entertainment</a></li>
+                            <li class="categories"><a class="nav-link" href="">Finance/Economics</a></li>
+                            <li class="categories"><a class="nav-link" href="">Politics</a></li>
+                            <li class="categories"><a class="nav-link" href="">Sciences</a></li>
+                            <li class="categories"><a class="nav-link" href="">Opinions</a></li>
+                            <li class="categories"><a class="nav-link" href="">Ships and Giggles</a></li>
                         </ul>
                       </div>
                 </ul>
