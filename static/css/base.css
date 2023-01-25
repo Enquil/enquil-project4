@@ -1,3 +1,39 @@
-.nav, .footer {
-    background-color: red;
+html, body {
+    background-color: #eee5e5;
+    height: 100%;
 }
+
+/*------------------------- Navbar -------------------------*/
+
+nav {
+    background-color: #19647e;
+}
+
+.nav-color {
+    line-height: 1.8;
+    border: none;
+    background-color: #19647e;
+}
+
+.nav-color:hover {
+    background-color: #37392e;
+}
+
+.nav-link {
+    color: #eee5e5;
+    border-radius: 4px;
+}
+
+.nav-link:hover {
+    background-color: #37392e;
+}
+
+
+.dropdown-adjust {
+    padding: 0;
+}
+
+.categories {
+    background-color: #37392e;
+}
+
