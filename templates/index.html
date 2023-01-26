@@ -6,20 +6,38 @@
 <section>
     <div class="container-fluid g-0">
         <div class="row g-0">
-            <div class="col-md-3">
+            <div class="col-md-2">
             </div>
-            <div class="col-md-6 text-center">
+            <div class="col-md-8 text-center">
                     {% for post in post_list %}
                     <div class="post-card my-3">
-                        <h2>{{ post.title }}</h2>
-                        <img style="width: 350px; height: auto;" src=" {{ post.featured_image.url }}">
-                        <h4>By: {{ post.author | safe }}</h4>
+
+                                <!-- If/else depending on if post contains an image -->
+                        {% if "placeholder" in post.featured_image.url %}
+
+                        <h2 class="pt-4">{{ post.title }}</h2>
+                        <h4>{{post.comme}}By: {{ post.author | safe }}<span class="post-date"> | {{ post.created_on }}</span></h4>
+                        <h6>LIKES AND COMMENTS</h6>
+                        {% else %}
+
+                        <div class="row g-0">
+                            <div class="col-md-4 col-lg-6">
+                                <h3 class="pt-4">{{ post.title }}</h3>
+                                <h5>By: {{ post.author | safe }}<span class="post-date"> | {{ post.created_on }}</span></h5>
+                                <h6>LIKES AND COMMENTS</h6>
+                                </div>                        
+                                    <div class="col-md-8 col-lg-6">
+                                
+                                <img class="m-2" style="max-width: 300px; height: auto;" src=" {{ post.featured_image.url }}">
+                            </div>
+                        </div>
+                                {% endif %}
                         <p class="m-0 p-3">{{ post.excerpt | safe }}</p>
                         <p class="m-0"><a href="{{ post.link}}"><a></p>
                     </div>
                     {% endfor %}
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
             </div>
         </div>
     </div>
