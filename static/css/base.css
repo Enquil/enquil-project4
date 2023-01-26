@@ -1,12 +1,24 @@
 html, body {
-    background-color: #eee5e5;
+    background-color: #ddcecd;
     height: 100%;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*------------------------- Navbar -------------------------*/
 
 nav {
     background-color: #19647e;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.btn {
+    border-radius: 0;
 }
 
 .nav-color {
@@ -21,7 +33,6 @@ nav {
 
 .nav-link {
     color: #eee5e5;
-    border-radius: 4px;
 }
 
 .nav-link:hover {
@@ -29,11 +40,26 @@ nav {
 }
 
 
-.dropdown-adjust {
+.dropdown-menu {
     padding: 0;
+    margin: 0;
+    border: none;
 }
 
 .categories {
     background-color: #37392e;
 }
 
+.navbar-toggler {
+    margin-right: 20px;
+}
+
+/*------------------------- Posts -------------------------*/
+
+.post-card {
+    background-color: #eee5e5;
+}
+
+.brand {
+    font-size: 50px;
+}
