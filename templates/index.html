@@ -3,13 +3,21 @@
 
 {% block content %}
 
-<section class="ps-0 pe-0 pe-sm-4">
-    <div class="container-fluid g-0">
+    <div class="container-fluid g-0" style="height: 100%;">
         <div class="row g-0">
-            <div class="col-md-4 col-lg-3 text-center sticky">
-                <h2>Extra Features</h2>
+            <div class="col-md-4 col-lg-3 text-center logged-in-features">
+                <div class="sticky-top navbar-expand-md">
+                    {% if user.is_authenticated %}
+                    <ul class="list-unstyled fs-2 p-4">
+                        <h2>Welcome back dasdadqwdawd</h2>
+                        <a href="#"><li>Create Post</li></a>
+                        <li>News API</li>
+                        <li>Stock API</li>
+                    </ul>
+                    {% endif %}
+                </div>
             </div>
-            <div class="col-md-8 col-lg-9 text-center">
+            <div class="col-md-8 col-lg-9 px-0 px-md-3 text-center">
                     {% for post in post_list %}
                     <div class="post-card my-3">
 
@@ -40,6 +48,6 @@
             </div>
         </div>
     </div>
-</section>
+
 
 {% endblock %}

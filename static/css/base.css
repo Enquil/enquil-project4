@@ -1,11 +1,13 @@
+/*------------------------- General element styling -------------------------*/
+
 html, body {
     background-color: #ddcecd;
-    height: 100%;
 }
 
 a {
     text-decoration: none;
 }
+
 
 /*------------------------- Navbar -------------------------*/
 
@@ -39,7 +41,6 @@ nav {
     background-color: #37392e;
 }
 
-
 .dropdown-menu {
     padding: 0;
     margin: 0;
@@ -53,6 +54,7 @@ nav {
 .navbar-toggler {
     margin-right: 20px;
 }
+
 
 /*------------------------- Posts -------------------------*/
 
@@ -68,10 +70,9 @@ nav {
     font-size: 15px;
 }
 
+
 /*------------------------- Extra tools for Users -------------------------*/
 
-.sticky-div {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+.logged-in-features {
+    background-color: #28afb0;
 }
