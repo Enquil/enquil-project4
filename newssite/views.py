@@ -30,3 +30,8 @@ class PostDetail(View):
                 "liked": liked
             },
         )
+
+
+class AddPost(View):
+    model = Post
+    template_name = 'add_post.hml'
