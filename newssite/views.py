@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.views.generic.edit import CreateView
 from django.http import HttpResponse, HttpResponseRedirect
 from django.views import generic, View
 from .models import Post
@@ -32,6 +33,8 @@ class PostDetail(View):
         )
 
 
-class AddPost(View):
+class AddPost(CreateView):
+
     model = Post
-    template_name = 'add_post.hml'
+    template_name = 'add_post.html'
+    fields = '__all__'
