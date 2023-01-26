@@ -60,6 +60,12 @@ nav {
 
 .post-card {
     background-color: #eee5e5;
+    border-top: 1px ridge #37392e;
+    border-bottom: 1px ridge #37392e;
+}
+
+.post-card * {
+    color: #37392e;
 }
 
 .brand {
@@ -75,4 +81,11 @@ nav {
 
 .logged-in-features {
     background-color: #28afb0;
+}
+
+
+/*------------------------- Footer -------------------------*/
+
+footer {
+    background-color: #19647e;
 }
