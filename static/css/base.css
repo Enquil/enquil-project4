@@ -67,3 +67,11 @@ nav {
 .post-date {
     font-size: 15px;
 }
+
+/*------------------------- Extra tools for Users -------------------------*/
+
+.sticky-div {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
